@@ -31,9 +31,8 @@ class MemberRepositoryTest {
         member.setName("memberA");
 
         // when
-        Long savedId = repository.save(member);
 
-        Member findMember = repository.find(savedId);
+        Member findMember = repository.findOne(member.getId());
         // then
         Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
         Assertions.assertThat(findMember.getName()).isEqualTo(member.getName());
