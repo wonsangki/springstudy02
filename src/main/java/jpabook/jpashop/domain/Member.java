@@ -21,6 +21,6 @@ public class Member {
     private List<Order> orders = new ArrayList<>();
 
     @Embedded
-    private Address adress;
+    private Address address;
 
 }

@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Getter @Setter
 public class Delivery {
-    @Id
+    @Id @GeneratedValue
     @Column(name = "delivery_id", nullable = false)
     private Long id;
 
